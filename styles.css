@@ -212,14 +212,26 @@ body {
   color: var(--stone);
   line-height: 1.6;
 }
+/* Mobile hero image — hidden on desktop */
+.hero-mobile-img { display: none; }
+
 @media (max-width: 900px) {
-  .hero { min-height: auto !important; }
-  .hero-bg { background-position: center center !important; filter: brightness(0.35) !important; }
+  .hero {
+    min-height: auto !important;
+    flex-direction: column;
+  }
+  .hero-bg { display: none; }
+  .hero-mobile-img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
   .hero-inner {
     grid-template-columns: 1fr !important;
-    padding: 140px 24px 80px !important;
+    padding: 100px 24px 40px !important;
     gap: 0 !important;
-    min-height: 85vh;
+    background: var(--black);
     display: flex !important;
     flex-direction: column;
     justify-content: center;
