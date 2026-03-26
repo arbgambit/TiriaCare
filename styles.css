@@ -227,8 +227,7 @@ body {
     display: block;
     position: absolute;
     inset: 0;
-    background: url('brand_assets/products.jpeg') 75% top / cover no-repeat;
-    filter: brightness(0.5);
+    background: url('brand_assets/Tiria Picture.jpeg') center top / cover no-repeat;
   }
   .hero-mobile-logo { display: none; }
   .hero-inner {
