@@ -149,8 +149,8 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('brand_assets/products.jpeg') center/cover no-repeat;
-  filter: brightness(0.35);
+  background: url('brand_assets/products.jpeg') right center / cover no-repeat;
+  filter: brightness(0.3);
 }
 .hero-inner {
   position: relative;
