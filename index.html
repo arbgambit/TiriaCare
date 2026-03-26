@@ -8,8 +8,8 @@
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav" id="navbar">
+  <!-- Nav (dark for hero) -->
+  <nav class="nav nav--dark" id="navbar">
     <a href="index.html" class="nav-logo"><img src="brand_assets/logo.jpeg" alt="TiriaCare"></a>
     <div class="nav-center">
       <a href="index.html" class="active">Inicio</a>
@@ -29,106 +29,149 @@
     <a href="pages/contacto.html">Contacto</a>
   </div>
 
-  <!-- Hero -->
+  <!-- Hero with background image -->
   <section class="hero">
+    <div class="hero-bg" style="background-image: url('brand_assets/products.jpeg');"></div>
     <div class="hero-inner">
       <div>
-        <div class="hero-overline reveal">
-          <div class="hero-overline-line"></div>
-          <span>Estética Médica No Invasiva</span>
-        </div>
-        <h1 class="reveal d1">Remodelación corporal <em>natural</em> y segura</h1>
-        <p class="hero-sub reveal d2">Tecnología de vacío exclusiva con resultados visibles desde la primera sesión. Sin cirugía, sin dolor, con 45 años de experiencia.</p>
-        <div class="hero-actions reveal d3">
-          <a href="pages/contacto.html" class="btn btn-gold">Agendar Consulta</a>
-          <a href="pages/productos.html" class="btn btn-outline-light">Ver Productos</a>
+        <h1 class="reveal">Donde el<br>bienestar<br>se encuentra<br>con la <em style="font-style: italic; color: var(--teal);">belleza</em></h1>
+        <p class="hero-sub reveal d1">Tecnología de vacío exclusiva con resultados visibles desde la primera sesión. Sin cirugía, sin dolor.</p>
+        <div class="hero-actions reveal d2">
+          <a href="pages/contacto.html" class="btn btn-teal">Agendar Consulta</a>
+          <a href="pages/productos.html" class="btn btn-outline-light">Conocer Más</a>
         </div>
       </div>
-      <div class="hero-img reveal-right">
-        <img src="brand_assets/products.jpeg" alt="Copas TiriaCare">
-        <div class="hero-stat">
-          <div class="hero-stat-num">45+</div>
-          <div class="hero-stat-label">Años de Experiencia</div>
+      <div class="reveal-right">
+        <div class="hero-card">
+          <img src="brand_assets/product.jpeg" alt="Copas TiriaCare">
+          <div class="hero-card-label">Exclusivo</div>
+          <h3>4 Copas Especializadas</h3>
+          <p>Sistema único en el mercado, desarrollado en 6 años de investigación.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Highlights Bar -->
-  <div class="highlights">
-    <div class="highlight-item reveal">
-      <div class="highlight-num">4</div>
-      <div class="highlight-text">Copas Especializadas</div>
+  <!-- Rediscover section — split image + text -->
+  <section class="section">
+    <div class="container split">
+      <div class="reveal-left">
+        <img src="brand_assets/product.jpeg" alt="Copas TiriaCare" class="split-img" style="object-fit: contain; background: var(--cream);">
+      </div>
+      <div class="reveal-right">
+        <p class="label">Sobre TiriaCare</p>
+        <h2 class="h2">Redescubre<br>tu mejor<br>versión</h2>
+        <p class="body-text mt-md">Creadas por María Gilma Tiría — especialista en Estética Médica y Holística con más de 45 años de experiencia en Colombia y Canadá.</p>
+        <p class="body-text mt-sm">Un sistema de copas único en el mercado, desarrollado durante 6 años para ofrecer resultados reales, seguros y sin dolor.</p>
+        <div class="mt-md">
+          <a href="pages/nosotros.html" class="btn btn-outline">Conocer Nuestra Historia →</a>
+        </div>
+      </div>
     </div>
-    <div class="highlight-item reveal d1">
-      <div class="highlight-num">8+</div>
-      <div class="highlight-text">Zonas del Cuerpo</div>
+  </section>
+
+  <!-- Services — cards row -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 48px;">
+        <p class="label">Nuestros Servicios</p>
+        <h2 class="h2">Mejora tu bienestar<br>a tu manera</h2>
+      </div>
+      <div class="grid-4">
+        <div class="service-card reveal">
+          <div class="service-card-num">01</div>
+          <h3>Estética Corporal</h3>
+          <p>Remodelación no invasiva. Celulitis, flacidez, grasa localizada y más.</p>
+        </div>
+        <div class="service-card reveal d1">
+          <div class="service-card-num">02</div>
+          <h3>Preoperatorio</h3>
+          <p>Prepara tu cuerpo para mejores resultados quirúrgicos.</p>
+        </div>
+        <div class="service-card reveal d2">
+          <div class="service-card-num">03</div>
+          <h3>Posoperatorio</h3>
+          <p>Acelera tu recuperación y mejora los resultados de tu cirugía.</p>
+        </div>
+        <div class="service-card reveal d3">
+          <div class="service-card-num">04</div>
+          <h3>Fitness</h3>
+          <p>Rompe grasa en zonas difíciles que no responden al ejercicio.</p>
+        </div>
+      </div>
+      <div class="text-center mt-lg reveal">
+        <a href="pages/servicios.html" class="btn btn-dark">Ver Todos los Servicios →</a>
+      </div>
     </div>
-    <div class="highlight-item reveal d2">
-      <div class="highlight-num">6</div>
-      <div class="highlight-text">Años de Desarrollo</div>
+  </section>
+
+  <!-- Teal promo band -->
+  <div class="promo-band">
+    <div class="promo-inner">
+      <div class="promo-text reveal">
+        <p class="label" style="color: var(--teal-deep);">Tratamientos Especializados</p>
+        <h2>Resultados visibles desde la primera sesión</h2>
+        <div class="promo-badges">
+          <span class="promo-badge">Sin Dolor</span>
+          <span class="promo-badge">Sin Cirugía</span>
+          <span class="promo-badge">No Invasivo</span>
+        </div>
+        <p class="body-text">45 años de experiencia respaldan cada tratamiento. Tecnología de vacío combinada con técnicas seguras y efectivas.</p>
+        <div class="mt-md">
+          <a href="pages/contacto.html" class="btn btn-dark">Agendar Consulta</a>
+        </div>
+      </div>
+      <div class="promo-images reveal-right">
+        <img src="brand_assets/product.jpeg" alt="Copas TiriaCare" style="object-fit: contain; background: white; padding: 12px;">
+        <img src="brand_assets/products.jpeg" alt="TiriaCare" style="object-fit: cover;">
+        <img src="https://placehold.co/400x200/A8D8D8/FFFFFF?text=Tratamiento" alt="Tratamiento" style="grid-column: span 2;">
+      </div>
     </div>
   </div>
 
-  <!-- About Preview -->
+  <!-- Conditions treated -->
   <section class="section">
-    <div class="container grid-2-1">
-      <div class="reveal-left">
-        <img src="brand_assets/product.jpeg" alt="Copas TiriaCare" class="about-img">
-      </div>
-      <div>
-        <p class="label reveal">Sobre TiriaCare</p>
-        <h2 class="h2 reveal d1">Innovación nacida de <em>la experiencia</em></h2>
-        <p class="body-text reveal d2" style="margin-top: 20px;">Creadas por María Gilma Tiría — especialista en Estética Médica y Holística con más de 45 años de experiencia en Colombia y Canadá. Un sistema de copas único en el mercado, desarrollado durante 6 años para ofrecer resultados reales.</p>
-        <div style="margin-top: 32px;" class="reveal d3">
-          <a href="pages/nosotros.html" class="btn btn-outline">Conocer Más →</a>
+    <div class="container split">
+      <div class="reveal">
+        <p class="label">Condiciones Tratadas</p>
+        <h2 class="h2">Soluciones<br>efectivas para<br>cada condición</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
+          <span class="chip">Celulitis</span>
+          <span class="chip">Flacidez Cutánea</span>
+          <span class="chip">Estrías</span>
+          <span class="chip">Grasa Localizada</span>
+          <span class="chip">Retención de Líquidos</span>
+          <span class="chip">Falta de Tonicidad</span>
+          <span class="chip">Fibrosis</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Services Preview -->
-  <section class="section section-cream">
-    <div class="container">
-      <p class="label reveal">Nuestros Servicios</p>
-      <h2 class="h2 reveal d1" style="margin-bottom: 48px;">Soluciones para cada <em>etapa</em></h2>
-      <a href="pages/servicios.html" style="text-decoration: none; color: inherit;">
-        <div class="service-row reveal d1">
-          <span class="service-row-num">01</span>
-          <h3>Estética Corporal</h3>
-          <span class="service-row-arrow">→</span>
+      <div class="reveal-right">
+        <p class="label label-dark">Zonas del Cuerpo</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="zone-tag">Abdomen</span>
+          <span class="zone-tag">Cintura</span>
+          <span class="zone-tag">Espalda</span>
+          <span class="zone-tag">Hombros</span>
+          <span class="zone-tag">Brazos</span>
+          <span class="zone-tag">Caderas</span>
+          <span class="zone-tag">Glúteos</span>
+          <span class="zone-tag">Piernas</span>
+          <span class="zone-tag">Cuello</span>
+          <span class="zone-tag">Rostro</span>
         </div>
-      </a>
-      <a href="pages/servicios.html" style="text-decoration: none; color: inherit;">
-        <div class="service-row reveal d2">
-          <span class="service-row-num">02</span>
-          <h3>Preparación Preoperatoria</h3>
-          <span class="service-row-arrow">→</span>
+        <div class="mt-lg">
+          <a href="pages/servicios.html" class="btn btn-outline">Ver Tratamientos →</a>
         </div>
-      </a>
-      <a href="pages/servicios.html" style="text-decoration: none; color: inherit;">
-        <div class="service-row reveal d3">
-          <span class="service-row-num">03</span>
-          <h3>Recuperación Posoperatoria</h3>
-          <span class="service-row-arrow">→</span>
-        </div>
-      </a>
-      <a href="pages/servicios.html" style="text-decoration: none; color: inherit;">
-        <div class="service-row reveal d4">
-          <span class="service-row-num">04</span>
-          <h3>Complemento Fitness</h3>
-          <span class="service-row-arrow">→</span>
-        </div>
-      </a>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta-banner">
-    <h2 class="reveal">Tu transformación <em>comienza hoy</em></h2>
-    <p class="reveal d1">Resultados visibles desde la primera sesión. Sin dolor, sin cirugía, con la confianza de 45 años de experiencia.</p>
+    <h2 class="reveal">Tu transformación<br>comienza hoy</h2>
+    <p class="reveal d1">Agenda tu consulta personalizada y descubre el tratamiento ideal para ti.</p>
     <div class="reveal d2">
-      <a href="pages/contacto.html" class="btn btn-gold">Agendar Consulta</a>
+      <a href="pages/contacto.html" class="btn btn-teal">Agendar Consulta</a>
     </div>
   </section>
 
