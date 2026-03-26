@@ -213,7 +213,7 @@ body {
   line-height: 1.6;
 }
 @media (max-width: 900px) {
-  .hero-bg { background-position: 75% top !important; filter: brightness(0.6) !important; background-size: 140% auto !important; }
+  .hero-bg { background-position: 75% top !important; filter: brightness(0.6) !important; }
   .hero-inner {
     grid-template-columns: 1fr !important;
     padding: 120px 20px 48px !important;
