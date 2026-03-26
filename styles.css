@@ -613,6 +613,51 @@ body {
 }
 @media (max-width: 900px) { .page-header { padding: 120px 20px 56px; } }
 
+/* ─── COMPREHENSIVE MOBILE FIXES ─── */
+@media (max-width: 900px) {
+  /* All sections with inline padding */
+  .section-dark, .section-teal, .section-cream { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* Split images */
+  .split-img, .split-img-tall { height: 260px !important; }
+
+  /* Service cards grid — 2 columns on tablet, 1 on phone */
+  .grid-4 { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* Inline padded sections */
+  [style*="padding: 80px 48px"] { padding: 56px 20px !important; }
+  [style*="padding: 64px 48px"] { padding: 48px 20px !important; }
+
+  /* Footer */
+  footer[style*="padding: 20px 48px"] { padding: 16px 20px !important; }
+
+  /* Video */
+  video { box-shadow: none !important; }
+
+  /* Conditions image */
+  .split img[style*="height: 280px"] { height: 200px !important; }
+}
+
+@media (max-width: 480px) {
+  /* Phone-specific */
+  .hero { min-height: 90vh; }
+  .hero h1 { font-size: 2rem !important; line-height: 1.1; }
+  .hero-sub { font-size: 0.82rem !important; }
+
+  .h2 { font-size: 1.6rem !important; }
+
+  .grid-4 { grid-template-columns: 1fr !important; }
+  .grid-3 { grid-template-columns: 1fr !important; }
+
+  .service-card { padding: 24px; }
+  .service-card-num { font-size: 1.8rem; }
+
+  .chip { font-size: 0.7rem; padding: 6px 14px; }
+  .zone-tag { font-size: 0.7rem; padding: 5px 10px; }
+
+  .btn { padding: 12px 24px; font-size: 0.7rem; }
+}
+
 /* Utility */
 .logo-white { filter: brightness(0) invert(1); }
 .text-center { text-align: center; }
