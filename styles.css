@@ -227,8 +227,8 @@ body {
     display: block;
     position: absolute;
     inset: 0;
-    background: url('brand_assets/products.jpeg') center center / cover no-repeat;
-    filter: brightness(0.4);
+    background: url('brand_assets/products.jpeg') 75% top / cover no-repeat;
+    filter: brightness(0.5);
   }
   .hero-mobile-logo { display: none; }
   .hero-inner {
