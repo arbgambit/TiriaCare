@@ -149,8 +149,8 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('brand_assets/products.jpeg') right center / cover no-repeat;
-  filter: brightness(0.3);
+  background: url('brand_assets/products.jpeg') center/cover no-repeat;
+  filter: brightness(0.35);
 }
 .hero-inner {
   position: relative;
@@ -216,7 +216,7 @@ body {
   .hero-bg { background-position: 75% top !important; filter: brightness(0.6) !important; }
   .hero-inner {
     grid-template-columns: 1fr !important;
-    padding: 120px 20px 48px !important;
+    padding: 0 20px 48px !important;
     gap: 0 !important;
     min-height: 100vh;
     min-height: 100svh;
