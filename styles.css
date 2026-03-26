@@ -48,7 +48,7 @@ body {
   box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 .nav-logo img { height: 30px; width: auto; }
-.nav--dark .nav-logo img { filter: brightness(0) invert(1); }
+.nav--dark .nav-logo img { filter: brightness(0) invert(1); mix-blend-mode: screen; }
 .nav--light .nav-logo img { filter: none; }
 .nav.scrolled .nav-logo img { filter: none; }
 .nav-center {
@@ -228,18 +228,9 @@ body {
     position: absolute;
     inset: 0;
     background: url('brand_assets/products.jpeg') center center / cover no-repeat;
+    filter: brightness(0.4);
   }
-  .hero-mobile-logo {
-    display: block;
-    position: absolute;
-    top: 72px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140px;
-    z-index: 3;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
-  }
+  .hero-mobile-logo { display: none; }
   .hero-inner {
     grid-template-columns: 1fr !important;
     padding: 0 20px 40px !important;
@@ -712,7 +703,7 @@ body {
 }
 
 /* Utility */
-.logo-white { filter: brightness(0) invert(1); }
+.logo-white { filter: brightness(0) invert(1); mix-blend-mode: screen; }
 .text-center { text-align: center; }
 .mt-sm { margin-top: 16px; }
 .mt-md { margin-top: 28px; }
