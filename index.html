@@ -31,24 +31,17 @@
 
   <!-- Hero with background image -->
   <section class="hero">
-    <div class="hero-bg" style="background-image: url('brand_assets/products.jpeg');"></div>
-    <div class="hero-inner">
+    <div class="hero-bg" style="background-image: url('brand_assets/products.jpeg'); filter: brightness(0.3); background-position: right center;"></div>
+    <div class="hero-inner" style="grid-template-columns: 1fr 1fr; gap: 60px;">
       <div>
-        <h1 class="reveal">Donde el<br>bienestar<br>se encuentra<br>con la <em style="font-style: italic; color: var(--teal);">belleza</em></h1>
-        <p class="hero-sub reveal d1">Tecnología de vacío exclusiva con resultados visibles desde la primera sesión. Sin cirugía, sin dolor.</p>
+        <h1 class="reveal">Donde el bienestar se encuentra con la <em style="font-style: italic; color: var(--teal);">belleza</em></h1>
+        <p class="hero-sub reveal d1">Tecnología de vacío exclusiva con resultados visibles desde la primera sesión. Sin cirugía, sin dolor, con 45 años de experiencia.</p>
         <div class="hero-actions reveal d2">
           <a href="pages/contacto.html" class="btn btn-teal">Agendar Consulta</a>
           <a href="pages/productos.html" class="btn btn-outline-light">Conocer Más</a>
         </div>
       </div>
-      <div class="reveal-right">
-        <div class="hero-card">
-          <img src="brand_assets/product.jpeg" alt="Copas TiriaCare">
-          <div class="hero-card-label">Exclusivo</div>
-          <h3>4 Copas Especializadas</h3>
-          <p>Sistema único en el mercado, desarrollado en 6 años de investigación.</p>
-        </div>
-      </div>
+      <div></div>
     </div>
   </section>
 
@@ -105,29 +98,38 @@
     </div>
   </section>
 
-  <!-- Teal promo band -->
-  <div class="promo-band">
-    <div class="promo-inner">
-      <div class="promo-text reveal">
-        <p class="label" style="color: var(--teal-deep);">Tratamientos Especializados</p>
-        <h2>Resultados visibles desde la primera sesión</h2>
-        <div class="promo-badges">
-          <span class="promo-badge">Sin Dolor</span>
-          <span class="promo-badge">Sin Cirugía</span>
-          <span class="promo-badge">No Invasivo</span>
-        </div>
-        <p class="body-text">45 años de experiencia respaldan cada tratamiento. Tecnología de vacío combinada con técnicas seguras y efectivas.</p>
-        <div class="mt-md">
-          <a href="pages/contacto.html" class="btn btn-dark">Agendar Consulta</a>
-        </div>
+  <!-- Why TiriaCare -->
+  <section class="section-dark" style="padding: 80px 48px;">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 48px;">
+        <p class="label" style="color: var(--teal);">¿Por Qué TiriaCare?</p>
+        <h2 class="h2" style="color: var(--white);">Resultados visibles desde<br>la primera sesión</h2>
       </div>
-      <div class="promo-images reveal-right">
-        <img src="brand_assets/product.jpeg" alt="Copas TiriaCare" style="object-fit: contain; background: white; padding: 12px;">
-        <img src="brand_assets/products.jpeg" alt="TiriaCare" style="object-fit: cover;">
-        <img src="https://placehold.co/400x200/A8D8D8/FFFFFF?text=Tratamiento" alt="Tratamiento" style="grid-column: span 2;">
+      <div class="grid-3">
+        <div class="reveal" style="text-align: center; padding: 32px 20px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--teal); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--black)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 style="font-family: var(--serif); font-size: 1.2rem; color: var(--white); margin-bottom: 8px;">Sin Dolor</h3>
+          <p style="font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6;">Tratamientos cómodos sin enrojecimiento, trauma ni incomodidad.</p>
+        </div>
+        <div class="reveal d1" style="text-align: center; padding: 32px 20px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--teal); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--black)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 style="font-family: var(--serif); font-size: 1.2rem; color: var(--white); margin-bottom: 8px;">Sin Cirugía</h3>
+          <p style="font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6;">Tecnología de vacío no invasiva. Resultados reales sin intervención quirúrgica.</p>
+        </div>
+        <div class="reveal d2" style="text-align: center; padding: 32px 20px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--teal); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--black)" stroke-width="1.5"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+          </div>
+          <h3 style="font-family: var(--serif); font-size: 1.2rem; color: var(--white); margin-bottom: 8px;">45+ Años</h3>
+          <p style="font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6;">Décadas de experiencia en estética médica respaldan cada tratamiento.</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Conditions treated -->
   <section class="section">
