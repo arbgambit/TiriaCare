@@ -212,8 +212,9 @@ body {
   color: var(--stone);
   line-height: 1.6;
 }
-/* Mobile hero background — hidden on desktop */
+/* Mobile hero elements — hidden on desktop */
 .hero-mobile-bg { display: none; }
+.hero-mobile-logo { display: none; }
 
 @media (max-width: 900px) {
   .hero {
@@ -225,8 +226,17 @@ body {
     display: block;
     position: absolute;
     inset: 0;
-    background: url('brand_assets/products-mobile.jpeg') top center / contain no-repeat;
-    background-color: #c4cfc9;
+    background: url('brand_assets/products.jpeg') center center / cover no-repeat;
+  }
+  .hero-mobile-logo {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 120px;
+    z-index: 2;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
   }
   .hero-inner {
     grid-template-columns: 1fr !important;
