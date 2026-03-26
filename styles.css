@@ -225,7 +225,7 @@ body {
     display: block;
     position: absolute;
     inset: 0;
-    background: url('brand_assets/products-mobile.jpeg') center top / cover no-repeat;
+    background: url('brand_assets/products-mobile.jpeg') top center / cover no-repeat;
   }
   .hero-inner {
     grid-template-columns: 1fr !important;
